@@ -24,10 +24,12 @@ int main()
          << "----------------------------------------------\n\n";
 
     int arr[5];
+    int* pArr = arr;
 
     for(int a = 0; a < 5; a++)
     {
-       cout << "The memory address of 'arr[" << a << "]' is: " << &arr[a] << ".\n";
+       cout << "The memory address of 'arr[" << a << "]' is: " << pArr << ".\n";
+       pArr++;
     }
 
     cout << "\n" << "----------------------------------------------\n\n"
